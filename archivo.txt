@@ -1,0 +1,20 @@
+package Paquete;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+    public static void main(String[] args) {
+
+        double calificacion1, calificacion2, calificacion3, suma;
+
+        calificacion1 = Double.parseDouble(JOptionPane.showInputDialog("Digita la primera Calificación"));
+        calificacion2 = Double.parseDouble(JOptionPane.showInputDialog("Digita la segunda Calificación"));
+        calificacion3 = Double.parseDouble(JOptionPane.showInputDialog("Digita la tercera Calificación"));
+
+        suma = calificacion1 + calificacion2 + calificacion3;
+
+        JOptionPane.showMessageDialog(null,"La suma de las tres calificaciones es: " + suma);
+        JOptionPane.showMessageDialog(null,"El promedio de las tres calificaciones es: " + suma/3);
+        
+    }
+}
