@@ -1,0 +1,20 @@
+package Paquete;
+
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int horasTrabajadas;
+        double pagoHora, salarioSemanal;
+
+        System.out.println("Digita las horas trabajadas en la semana: ");
+        horasTrabajadas = entrada.nextInt();
+        System.out.println("Cuánto se paga por hora?");
+        pagoHora = entrada.nextDouble();
+
+        salarioSemanal = pagoHora*horasTrabajadas;
+        System.out.println("Salario semanal es: " + salarioSemanal);
+    }
+}
